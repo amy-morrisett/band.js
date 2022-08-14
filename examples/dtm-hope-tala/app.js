@@ -36,13 +36,15 @@ app.controller('AppController', function($scope) {
 
     soprano1.note('half', 'Db5')
         .note('dottedQuarter', 'Eb5')
-        .note('eighth', 'Db5', true);
+        // note below includes part of bar 2
+        .note('wholeTiedToEighth', 'Db5');
 
-    soprano2.note('whole', 'Bb4', true);
+    // note below includes part of bar 2
+    soprano2.note('breve', 'Bb4');
 
-    alto1.note('dottedHalf', 'F4', true)
-        .note('eighth', 'F4')
-        .note('eighth', 'Gb4', true);
+    alto1.note('dottedHalfTiedToEighth', 'F4')
+        // note below includes part of bar 2
+        .note('wholeTiedToEighth', 'Gb4');
     
     alto2.rest('whole');
 
@@ -64,11 +66,11 @@ app.controller('AppController', function($scope) {
     // Bar 2
     soloist.rest('whole');
 
-    soprano1.note('whole', 'Db5');
+    // soprano1.note('whole', 'Db5');
 
-    soprano2.note('whole', 'Bb4');
+    // soprano2.note('whole', 'Bb4');
 
-    alto1.note('whole', 'Gb4');
+    // alto1.note('whole', 'Gb4');
     
     alto2.rest('whole');
 
@@ -92,13 +94,14 @@ app.controller('AppController', function($scope) {
 
     soprano1.note('half', 'Db5')
         .note('dottedQuarter', 'Eb5')
-        .note('eighth', 'C5', true);
+        // note below includes part of bar 4
+        .note('wholeTiedToEighth', 'C5');
 
     soprano2.note('whole', 'Gb4');
 
-    alto1.note('dottedHalf', 'Ab4', true)
-        .note('eighth', 'Ab4')
-        .note('eighth', 'Db4', true);
+    alto1.note('dottedHalfTiedToEighth', 'Ab4')
+        // note below includes part of bar 4
+        .note('wholeTiedToEighth', 'Db4');
     
     alto2.rest('whole');
 
@@ -120,11 +123,11 @@ app.controller('AppController', function($scope) {
     // Bar 4
     soloist.rest('whole');
 
-    soprano1.note('whole', 'C5');
+    // soprano1.note('whole', 'C5');
 
     soprano2.note('whole', 'Ab4, F4');
 
-    alto1.note('whole', 'Db4');
+    // alto1.note('whole', 'Db4');
     
     alto2.rest('whole');
 
@@ -148,15 +151,18 @@ app.controller('AppController', function($scope) {
 
     soprano1.note('half', 'C5, Bb4')
         .note('dottedQuarter', 'C5, Bb4')
-        .note('eighth', 'Bb4', true);
+        // note below includes part of bar 6
+        .note('half', 'Bb4');
 
     soprano2.note('half', 'Gb4')
         .note('dottedQuarter', 'Ab4')
-        .note('eighth', 'F4', true);
+        // note below includes part of bar 6
+        .note('half', 'F4');
 
     alto1.note('half', 'Eb4')
         .note('dottedQuarter', 'F4')
-        .note('eighth', 'Db4', true);
+        // note below includes part of bar 6
+        .note('half', 'Db4');
     
     alto2.rest('whole');
 
@@ -178,17 +184,14 @@ app.controller('AppController', function($scope) {
     // Bar 6
     soloist.rest('whole');
 
-    soprano1.note('dottedQuarter', 'Bb4')
-        .note('eighth', 'Ab4', true)
-        .note('half', 'Ab4');
+    // soprano1.note('dottedQuarter', 'Bb4')
+    soprano1.note('halfTiedToEighth', 'Ab4');
 
-    soprano2.note('dottedQuarter', 'F4')
-        .note('eighth', 'F4', true)
-        .note('half', 'F4');
+    // soprano2.note('dottedQuarter', 'F4')
+    soprano2.note('halfTiedToEighth', 'F4');
 
-    alto1.note('dottedQuarter', 'Db4')
-        .note('eighth', 'Db4', true)
-        .note('half', 'Db4');
+    // alto1.note('dottedQuarter', 'Db4')
+    alto1.note('halfTiedToEighth', 'Db4');
     
     alto2.rest('whole');
 
@@ -212,15 +215,18 @@ app.controller('AppController', function($scope) {
 
     soprano1.note('half', 'Bb4')
         .note('dottedQuarter', 'Bb4')
-        .note('eighth', 'Bb4', true);
+        // note below includes part of bar 8
+        .note('half', 'Bb4');
 
     soprano2.note('half', 'Gb4, F4')
         .note('dottedQuarter', 'Gb4, F4')
-        .note('eighth', 'F4', true);
+        // note below includes part of bar 8
+        .note('half', 'F4');
 
     alto1.note('half', 'Db4')
         .note('dottedQuarter', 'Db4')
-        .note('eighth', 'C4', true);
+        // note below includes part of bar 8
+        .note('half', 'C4');
     
     alto2.rest('whole');
 
@@ -242,21 +248,18 @@ app.controller('AppController', function($scope) {
     // Bar 8
     soloist.rest('whole');
 
-    soprano1.note('dottedQuarter', 'Bb4')
-        .note('eighth', 'A4', true)
-        .note('half', 'A4');
+    // soprano1.note('dottedQuarter', 'Bb4')
+    soprano1.note('halfTiedToEighth', 'A4');
 
     soprano1.repeat(4);
 
-    soprano2.note('dottedQuarter', 'F4')
-        .note('eighth', 'F4', true)
-        .note('half', 'F4');
+    // soprano2.note('dottedQuarter', 'F4')
+    soprano2.note('halfTiedToEighth', 'F4');
     
     soprano2.repeat(4);
 
-    alto1.note('dottedQuarter', 'C4')
-        .note('eighth', 'Db4', true)
-        .note('half', 'Db4');
+    // alto1.note('dottedQuarter', 'C4')
+    alto1.note('halfTiedToEighth', 'Db4');
     
     alto1.repeat(4);
     
@@ -283,7 +286,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
-        .note('eighth', 'Ab3', true)
+        // note below includes part of bar 10
+        .note('quarter', 'Ab3');
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -310,8 +314,8 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 10
-    soloist.note('eighth', 'Ab3')
-        .note('quarter', 'Eb4')
+    // soloist.note('eighth', 'Ab3')
+    soloist.note('quarter', 'Eb4')
         .note('eighth', 'Db4')
         .note('quarter', 'Db4')
         .rest('quarter');
@@ -342,7 +346,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
-        .note('eighth', 'Ab3', true)
+        // note below includes part of bar 12
+        .note('quarter', 'Ab3');
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -369,8 +374,8 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 12
-    soloist.note('eighth', 'Ab3')
-        .note('quarter', 'Eb4')
+    // soloist.note('eighth', 'Ab3')
+    soloist.note('quarter', 'Eb4')
         .note('eighth', 'F4')
         .note('eighth', 'Eb4')
         .note('eighth', 'Db4')
@@ -406,7 +411,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Ab3')
         .rest('quarter')
         .note('quarter', 'F4')
-        .note('eighth', 'Db4', true)
+        // note below includes part of bar 14
+        .note('quarter', 'Db4');
 
     // soprano1.note('half', 'C5, Bb4')
     //     .note('dottedQuarter', 'C5, Bb4')
@@ -435,10 +441,11 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 14
-    soloist.note('eighth', 'Db4')
-        .rest('half')
+    // soloist.note('eighth', 'Db4')
+    soloist.rest('half')
         .note('quarter', 'Db4')
-        .note('eighth', 'Db4', true)
+        // note below includes part of bar 15
+        .note('quarter', 'Db4');
 
     // soprano1.note('dottedQuarter', 'Bb4')
     //     .note('eighth', 'Ab4', true)
@@ -462,14 +469,14 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 15
+    // soloist.note('eighth', 'Db4')
     soloist.note('eighth', 'Db4')
-        .note('eighth', 'Db4')
         .note('quarter', 'F4')
         .note('quarter', 'Eb4')
-        .note('quarter', 'Eb4')
+        .note('quarter', 'Eb4');
 
     // soprano1.note('half', 'Bb4')
     //     .note('dottedQuarter', 'Bb4')
@@ -534,7 +541,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
-        .note('eighth', 'Ab3', true)
+        // note below includes part of bar 18
+        .note('quarter', 'Ab3')
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -561,8 +569,8 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 18
-    soloist.note('eighth', 'Ab3')
-        .note('quarter', 'Eb4')
+    // soloist.note('eighth', 'Ab3')
+    soloist.note('quarter', 'Eb4')
         .note('eighth', 'Db4')
         .note('quarter', 'Db4')
         .rest('quarter');
@@ -593,7 +601,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
         .note('eighth', 'Db4')
-        .note('eighth', 'Ab3', true)
+        // note below includes part of bar 20
+        .note('quarter', 'Ab3')
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -620,11 +629,12 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 20
-    soloist.note('eighth', 'Ab3')
-        .note('quarter', 'F4')
+    // soloist.note('eighth', 'Ab3')
+    soloist.note('quarter', 'F4')
         .note('quarter', 'Eb4')
         .note('quarter', 'Eb4')
-        .note('eighth', 'Eb4', true);
+        // note below includes part of bar 21
+        .note('quarter', 'Eb4');
 
     // soprano1.note('whole', 'C5');
 
@@ -650,13 +660,14 @@ app.controller('AppController', function($scope) {
         .note('eighth')
 
     // Bar 21
-    soloist.note('eighth', 'Eb4')
-        .note('sixteenth', 'C4')
+    // soloist.note('eighth', 'Eb4')
+    soloist.note('sixteenth', 'C4')
         .note('sixteenth', 'Bb3')
         .note('eighth', 'Ab3')
         .rest('quarter')
         .note('quarter', 'F4')
-        .note('eighth', 'F4', true);
+        // note below includes part of bar 22
+        .note('quarter', 'F4');
 
     // soprano1.note('half', 'C5, Bb4')
     //     .note('dottedQuarter', 'C5, Bb4')
@@ -685,12 +696,13 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 22
-    soloist.note('eighth', 'F4')
-        .note('eighth', 'Eb4')
+    // soloist.note('eighth', 'F4')
+    soloist.note('eighth', 'Eb4')
         .note('eighth', 'F4')
         .note('quarter', 'Db4')
         .rest('quarter')
-        .note('eighth', 'Db4', true);
+        // note below includes part of bar 23
+        .note('quarter', 'Db4');
 
     // soprano1.note('dottedQuarter', 'Bb4')
     //     .note('eighth', 'Ab4', true)
@@ -717,8 +729,8 @@ app.controller('AppController', function($scope) {
         .rest('half')
 
     // Bar 23
-    soloist.note('eighth', 'Db4')
-        .note('quarter', 'Db4')
+    // soloist.note('eighth', 'Db4')
+    soloist.note('quarter', 'Db4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
         .note('quarter', 'Eb4');
@@ -754,7 +766,8 @@ app.controller('AppController', function($scope) {
         .rest('eighth')
         .note('quarter', 'Db4')
         .note('quarter', 'Db4')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 25
+        .note('halfTiedToEighth', 'Ab4');
 
     // soprano1.note('dottedQuarter', 'Bb4')
     //     .note('eighth', 'A4', true)
@@ -780,13 +793,14 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 25 -- first chorus
-    soloist.note('half', 'Ab4')
-        .rest('eighth')
+    // soloist.note('half', 'Ab4')
+    soloist.rest('eighth')
         .note('quarter', 'Ab4')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 26
+        .note('quarter', 'Ab4');
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -804,7 +818,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Bb3')
         .note('eighth', 'Db4')
         .rest('eighth')
-        .note('eighth', 'Eb4', true);
+        // note below includes part of bar 26
+        .note('quarter', 'Eb4');
 
     drum.note('eighth')
         .note('eighth')
@@ -826,13 +841,14 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 26
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('eighth', 'Eb4')
         .note('eighth', 'Db4')
         .rest('eighth')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 27
+        .note('quarter', 'Ab4');
 
     // soprano1.note('whole', 'Db5');
 
@@ -840,8 +856,8 @@ app.controller('AppController', function($scope) {
 
     // alto1.note('whole', 'Gb4');
     
+    // alto2.note('eighth', 'Eb4')
     alto2.note('eighth', 'Eb4')
-        .note('eighth', 'Eb4')
         .rest('eighth')
         .note('eighth', 'Db4')
         .note('quarter', 'Eb4')
@@ -864,11 +880,11 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 27
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
         .note('quarter', 'Eb4');
@@ -888,7 +904,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Ab3')
         .note('eighth', 'Ab3')
         .rest('eighth')
-        .note('eighth', 'Db4', true);
+        // note below includes part of bar 28
+        .note('quarter', 'Db4');
 
     drum.note('eighth')
         .note('eighth')
@@ -913,7 +930,8 @@ app.controller('AppController', function($scope) {
     soloist.note('quarter', 'Db4')
         .rest('half')
         .rest('eighth')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 29
+        .note('quarter', 'Ab4');
 
     // soprano1.note('whole', 'C5');
 
@@ -921,8 +939,8 @@ app.controller('AppController', function($scope) {
 
     // alto1.note('whole', 'Db4');
     
+    // alto2.note('eighth', 'Db4')
     alto2.note('eighth', 'Db4')
-        .note('eighth', 'Db4')
         .rest('eighth')
         .note('eighth', 'Ab3')
         .note('eighth', 'Db4')
@@ -949,14 +967,15 @@ app.controller('AppController', function($scope) {
         .rest('eighth')
         .note('eighth')
         .rest('eighth')
-        .note('eighth')
+        .note('eighth');
 
     // Bar 29
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
-        .note('quarter', 'Db4', true);
+        // note below includes part of bar 30
+        .note('dottedQuarter', 'Db4');
 
     // soprano1.note('half', 'C5, Bb4')
     //     .note('dottedQuarter', 'C5, Bb4')
@@ -974,7 +993,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'C4')
         .note('quarter', 'F4')
         .rest('eighth')
-        .note('eighth', 'Bb3', true);
+        // note below includes part of bar 30
+        .note('quarter', 'Bb3');
 
     drum.note('eighth')
         .note('eighth')
@@ -996,13 +1016,14 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 30
-    soloist.note('eighth', 'Db4')
-        .note('eighth', 'Bb3')
+    // soloist.note('eighth', 'Db4')
+    soloist.note('eighth', 'Bb3')
         .rest('eighth')
         .note('quarter', 'Db4')
         .note('eighth', 'Ab3')
         .rest('eighth')
-        .note('eighth', 'Db4', true);
+        // note below includes part of bar 31
+        .note('quarter', 'Db4');
 
     // soprano1.note('dottedQuarter', 'Bb4')
     //     .note('eighth', 'Ab4', true)
@@ -1016,8 +1037,8 @@ app.controller('AppController', function($scope) {
     //     .note('eighth', 'Db4', true)
     //     .note('half', 'Db4');
     
-    alto2.note('eighth', 'Bb3')
-        .note('quarter', 'C4')
+    // alto2.note('eighth', 'Bb3')
+    alto2.note('quarter', 'C4')
         .note('eighth', 'Db4')
         .note('quarter', 'Ab3')
         .note('eighth', 'Db4')
@@ -1038,11 +1059,11 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 31
-    soloist.note('eighth', 'Db4')
-        .note('quarter', 'Db4')
+    // soloist.note('eighth', 'Db4')
+    soloist.note('quarter', 'Db4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
         .note('quarter', 'Eb4');
@@ -1064,7 +1085,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Gb3')
         .note('eighth', 'Gb3')
         .rest('eighth')
-        .note('eighth', 'F3', true);
+        // note below includes part of bar 32
+        .note('quarter', 'F3');
 
     drum.note('eighth')
         .note('eighth')
@@ -1105,8 +1127,8 @@ app.controller('AppController', function($scope) {
     //     .note('eighth', 'Db4', true)
     //     .note('half', 'Db4');
     
+    // alto2.note('eighth', 'F3')
     alto2.note('eighth', 'F3')
-        .note('eighth', 'F3')
         .rest('eighth')
         .note('eighth', 'F3')
         .note('eighth', 'F3')
@@ -1141,7 +1163,8 @@ app.controller('AppController', function($scope) {
         .note('eighth', 'Eb4')
         .rest('eighth')
         .note('quarter', 'Ab4')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 34
+        .note('quarter', 'Ab4');
 
     // soprano1.note('half', 'Db5')
     //     .note('dottedQuarter', 'Eb5')
@@ -1180,13 +1203,14 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 34
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('eighth', 'Eb4')
         .note('eighth', 'Db4')
         .rest('eighth')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 35
+        .note('quarter', 'Ab4');
 
     // soprano1.note('whole', 'Db5');
 
@@ -1218,11 +1242,11 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 35
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
         .note('quarter', 'Eb4');
@@ -1267,7 +1291,8 @@ app.controller('AppController', function($scope) {
     soloist.note('quarter', 'Db4')
         .rest('half')
         .rest('eighth')
-        .note('eighth', 'Ab4', true);
+        // note below includes part of bar 37
+        .note('quarter', 'Ab4');
 
     // soprano1.note('whole', 'C5');
 
@@ -1306,11 +1331,12 @@ app.controller('AppController', function($scope) {
         .note('eighth')
 
     // Bar 37
-    soloist.note('eighth', 'Ab4')
-        .note('quarter', 'Gb4')
+    // soloist.note('eighth', 'Ab4')
+    soloist.note('quarter', 'Gb4')
         .note('eighth', 'F4')
         .note('quarter', 'Eb4')
-        .note('quarter', 'Db4', true);
+        // note below includes part of bar 38
+        .note('dottedQuarter', 'Db4');
 
     // soprano1.note('half', 'C5, Bb4')
     //     .note('dottedQuarter', 'C5, Bb4')
@@ -1350,13 +1376,14 @@ app.controller('AppController', function($scope) {
         .note('eighth');
 
     // Bar 38
-    soloist.note('eighth', 'Db4')
-        .note('eighth', 'Bb3')
+    // soloist.note('eighth', 'Db4')
+    soloist.note('eighth', 'Bb3')
         .rest('eighth')
         .note('quarter', 'Db4')
         .note('eighth', 'Ab3')
         .rest('eighth')
-        .note('eighth', 'Db4', true);
+        // note below includes part of bar 39
+        .note('quarter', 'Db4');
 
     // soprano1.note('dottedQuarter', 'Bb4')
     //     .note('eighth', 'Ab4', true)
@@ -1392,11 +1419,11 @@ app.controller('AppController', function($scope) {
 
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
-        .rest('half')
+        .rest('half');
 
     // Bar 39
-    soloist.note('eighth', 'Db4')
-        .note('quarter', 'Db4')
+    // soloist.note('eighth', 'Db4')
+    soloist.note('quarter', 'Db4')
         .note('eighth', 'Db4')
         .note('eighth', 'Gb4')
         .note('eighth', 'F4')
@@ -1485,6 +1512,10 @@ app.controller('AppController', function($scope) {
     thumpPerc.rest('dottedQuarter')
         .note('eighth')
         .rest('half')
+    
+    // soloist.notes[13].duration = 0.357142857142857
+    // soloist.notes[13].rhythm = 'quarter'
+    // console.log(soloist.notes[13])
 
     let player = conductor.finish();
 

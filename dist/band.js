@@ -1171,7 +1171,11 @@ module.exports = {
     tripletEighth: 0.083333333,
     sixteenth: 0.0625,
     tripletSixteenth: 0.041666667,
-    thirtySecond: 0.03125
+    thirtySecond: 0.03125,
+    halfTiedToEighth: 0.625,
+    dottedHalfTiedToEighth: 0.875,
+    wholeTiedToEighth: 1.125,
+    breve: 2
 };
 
 },{}],10:[function(_dereq_,module,exports){
