@@ -12,20 +12,15 @@ app.controller('AppController', function($scope) {
         soprano1 = conductor.createInstrument('square', 'oscillators'),
         soprano2 = conductor.createInstrument('square', 'oscillators'),
         alto1 = conductor.createInstrument('square', 'oscillators'),
-        alto2 = conductor.createInstrument('sawtooth', 'oscillators'),
+        alto2 = conductor.createInstrument('triangle', 'oscillators'),
         drum = conductor.createInstrument('white', 'noises');
+        //TODO: change this to a more snap/clap sounding instrument
         snappyPerc = conductor.createInstrument('white', 'noises');
+        //TODO: change this to a louder, thumpier sounding instrument
         thumpPerc = conductor.createInstrument('white', 'noises');
 
-    soloist.setVolume(80);
-    soprano1.setVolume(25);
-    soprano2.setVolume(25);
-    alto1.setVolume(25);
-    alto2.setVolume(100);
-    drum.setVolume(25);
-    snappyPerc.setVolume(40);
-    thumpPerc.setVolume(40);
-    
+    drum.setVolume(50);
+
     /**
      * Intro
      */
